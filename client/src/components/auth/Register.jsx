@@ -42,6 +42,7 @@ const Register = () => {
         <div className='form-group'>
           <label htmlFor='name'>Name</label>
           <input
+            id='name'
             type='text'
             name='name'
             value={name}
@@ -49,11 +50,10 @@ const Register = () => {
             required
           />
         </div>
-      </form>
-      <form>
         <div className='form-group'>
-          <label htmlFor='email'>Email</label>
+          <label htmlFor='email'>Email Address</label>
           <input
+            id='email'
             type='email'
             name='email'
             value={email}
@@ -61,11 +61,10 @@ const Register = () => {
             required
           />
         </div>
-      </form>
-      <form>
         <div className='form-group'>
           <label htmlFor='password'>Password</label>
           <input
+            id='password'
             type='password'
             name='password'
             value={password}
@@ -74,11 +73,10 @@ const Register = () => {
             minLength='6'
           />
         </div>
-      </form>
-      <form>
         <div className='form-group'>
           <label htmlFor='password2'>Confirm Password</label>
           <input
+            id='password2'
             type='password'
             name='password2'
             value={password2}
@@ -87,12 +85,12 @@ const Register = () => {
             minLength='6'
           />
         </div>
+        <input
+          type='submit'
+          value='Register'
+          className='btn btn-primary btn-block'
+        />
       </form>
-      <input
-        type='submit'
-        value='Register'
-        className='btn btn-primart btn-block'
-      />
     </div>
   );
 };
